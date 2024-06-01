@@ -6,7 +6,7 @@ services:
     ports:
       - ${APP_PORT:-8080}:80
     volumes:
-      - .:/var/www/html
+      - ./src:/var/www/html
     environment:
       PHP_XDEBUG_MODE: debug,develop
       PHP_XDEBUG_AUTOSTART: yes
