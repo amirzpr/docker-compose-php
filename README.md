@@ -22,3 +22,14 @@ docker compose up -d
 
 There is a `src` folder that is designed for you to put your application source code in it, whether it's a Laravel app
 or just vanilla PHP. Just notice that the `src/public` directory will be used as the **document root** by Apache.
+
+## Laravel
+A Laravel 11 template project is created in the `src` folder. To make use of it, you need to run the below commands:
+
+```shell
+docker compose exec php bash
+
+# run below commands inside the container
+cp .env.example .env
+composer install
+```
